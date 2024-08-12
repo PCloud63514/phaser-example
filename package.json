@@ -1,0 +1,23 @@
+{
+  "name": "phaser-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vite run",
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-korean-postposition-processor": "^1.0.0",
+    "phaser": "^3.80.1",
+    "phaser3-rex-plugins": "^1.80.4"
+  }
+}
