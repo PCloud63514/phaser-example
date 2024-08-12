@@ -41,7 +41,7 @@ export class Chapter3 extends Phaser.Scene {
     create() {
         this.input.on('pointerup', () => {
             this.tapMessage.setVisible(false);
-            alert("Title Tap!");
+            alert("Go Chapter4");
             this.scene.start("chapter4");
         });
     }

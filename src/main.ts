@@ -7,6 +7,7 @@ import {Chapter1} from "./scene/1_scene.ts";
 import {Chapter2} from "./scene/2_resource_load.ts";
 import {Chapter3} from "./scene/3_title.ts";
 import {Chapter4} from "./scene/4_bird.ts";
+import {Chapter5} from "./scene/5_physics.ts";
 
 window.onerror = function (message, source, lineno, colno, error) {
     console.error(error);
@@ -73,7 +74,7 @@ const config: Phaser.Types.Core.GameConfig = {
     },
     pixelArt: true,
     scene: [
-        Chapter1, Chapter2, Chapter3, Chapter4
+        Chapter1, Chapter2, Chapter3, Chapter4, Chapter5
     ],
 };
 

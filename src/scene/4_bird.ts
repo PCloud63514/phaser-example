@@ -9,6 +9,7 @@ export class Chapter4 extends Phaser.Scene {
     private platforms: Phaser.GameObjects.Image;
     private bird: Phaser.GameObjects.Sprite;
     private spriteIdx: number = 1;
+
     constructor() {
         super("chapter4");
     }
@@ -17,7 +18,7 @@ export class Chapter4 extends Phaser.Scene {
         this.uiHandle();
     }
 
-    private uiHandle() {
+    uiHandle() {
         const width = this.cameras.main.width;
         const height = this.cameras.main.height;
         this.bg = this.add.image(0, 0, "bg-day")
@@ -38,14 +39,20 @@ export class Chapter4 extends Phaser.Scene {
             yoyo: true,                 // 깜빡거림을 위해 yoyo 효과를 사용 (알파 값을 다시 0에서 1로 변경)
         });
 
-        this.bird = this.add.sprite(width / 2, height / 2 + 50, "bird", 'yellowbird-2').setOrigin(0.5, 0.5);
+        this.bird = this.add.sprite(width / 2, height / 2 + 50, "bird", 'yellowbird-2')
+            .setOrigin(0.5, 0.5)
+            .setInteractive();
     }
 
     create() {
-        this.input.on('pointerup', () => {
+        this.input.on('pointerdown', () => {
             this.bird.setTexture('bird', 'yellowbird-' + this.spriteIdx);
             if (this.spriteIdx == 3) this.spriteIdx = 0;
             this.spriteIdx++;
         });
+        this.bird.on('pointerup', function () {
+            alert("Go Chapter5!");
+            this.scene.start("chapter5");
+        }, this);
     }
 }
