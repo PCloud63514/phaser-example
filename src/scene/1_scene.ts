@@ -18,7 +18,7 @@ export class Chapter1 extends Phaser.Scene {
      * 게임의 초기 설정과 객체를 배치하는 단계입니다.
      */
     create() {
-        this.scene.start("resourceLoad");
+        this.scene.start("chapter2");
     }
     /**
      * Scene이 활성화되어 있을 때 매 프레임마다 호출됩니다.

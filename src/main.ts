@@ -6,6 +6,7 @@ import TransitionImagePackPlugin from "phaser3-rex-plugins/templates/transitioni
 import {Chapter1} from "./scene/1_scene.ts";
 import {Chapter2} from "./scene/2_resource_load.ts";
 import {Chapter3} from "./scene/3_title.ts";
+import {Chapter4} from "./scene/4_bird.ts";
 
 window.onerror = function (message, source, lineno, colno, error) {
     console.error(error);

@@ -14,7 +14,7 @@ export class Chapter2 extends Phaser.Scene {
         this.load.on("complete", () => {
             this.assetText.text = "Complete!";
             this.time.delayedCall(3500, () => {
-                this.scene.start("title");
+                this.scene.start("chapter3");
             });
         });
     }
@@ -104,6 +104,7 @@ export class Chapter2 extends Phaser.Scene {
             this.load.image("yellowbird-upflap", "images/yellowbird-upflap.png");
             this.load.start();
         });
+        this.load.atlas('bird', "images/bird-sprite.png", "images/bird-sprite.json");
         this.load.audio("die", "audio/die.wav");
         this.load.audio("hit", "audio/hit.wav");
         this.load.audio("point", "audio/point.wav");
