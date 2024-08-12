@@ -3,6 +3,9 @@ import UIPlugin from "phaser3-rex-plugins/templates/ui/ui-plugin";
 import BBCodeTextPlugin from "phaser3-rex-plugins/plugins/bbcodetext-plugin";
 import InputTextPlugin from "phaser3-rex-plugins/plugins/inputtext-plugin.js";
 import TransitionImagePackPlugin from "phaser3-rex-plugins/templates/transitionimagepack/transitionimagepack-plugin.js";
+import {SampleScene} from "./scene/1_scene.ts";
+import {ResourceLoad} from "./scene/2_resource_load.ts";
+import {Title} from "./scene/3_title.ts";
 
 window.onerror = function (message, source, lineno, colno, error) {
     console.error(error);
@@ -24,8 +27,8 @@ const config: Phaser.Types.Core.GameConfig = {
     type: Phaser.WEBGL,
     parent: "app",
     scale: {
-        width: 1920,
-        height: 1080,
+        width: 288,
+        height: 512,
         mode: Phaser.Scale.FIT
     },
     physics: {
@@ -69,7 +72,7 @@ const config: Phaser.Types.Core.GameConfig = {
     },
     pixelArt: true,
     scene: [
-
+        SampleScene, ResourceLoad, Title
     ],
 };
 
