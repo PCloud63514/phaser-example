@@ -1,11 +1,11 @@
-export class ResourceLoad extends Phaser.Scene {
+export class Chapter2 extends Phaser.Scene {
     private percentText: Phaser.GameObjects.Text;
     private progressBar: Phaser.GameObjects.Graphics;
     private assetText: Phaser.GameObjects.Text;
     private delay: number = 0;
 
     constructor() {
-        super("resourceLoad");
+        super("chapter2");
     }
 
     preload() {

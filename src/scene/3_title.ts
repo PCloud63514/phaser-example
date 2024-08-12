@@ -3,15 +3,13 @@
  * 탭 메세지 깜빡거리게 보여주기
  * 화면 탭 시 메세지 제거 & 알럿창 호출하기
  */
-
-
-export class Title extends Phaser.Scene {
+export class Chapter3 extends Phaser.Scene {
     private bg: Phaser.GameObjects.Image;
     private tapMessage: Phaser.GameObjects.Image;
     private platforms: Phaser.GameObjects.Image;
 
     constructor() {
-        super("title");
+        super("chapter3");
     }
 
     preload() {

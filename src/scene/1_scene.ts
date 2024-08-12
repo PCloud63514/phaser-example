@@ -1,6 +1,6 @@
-export class SampleScene extends Phaser.Scene {
+export class Chapter1 extends Phaser.Scene {
     constructor() {
-        super("sampleScene");
+        super("chapter1");
     }
     /**
      * Scene이 생성될 때 가장 먼저 호출되는 메서드입니다.
