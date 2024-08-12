@@ -1,0 +1,209 @@
+{
+	"textures": [
+		{
+			"image": "bird-sprite.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 324,
+				"h": 26
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "bluebird-downflap.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 24
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 34,
+						"h": 24
+					}
+				},
+				{
+					"filename": "bluebird-midflap.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 24
+					},
+					"frame": {
+						"x": 37,
+						"y": 1,
+						"w": 34,
+						"h": 24
+					}
+				},
+				{
+					"filename": "bluebird-upflap.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 24
+					},
+					"frame": {
+						"x": 73,
+						"y": 1,
+						"w": 34,
+						"h": 24
+					}
+				},
+				{
+					"filename": "redbird-downflap.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 24
+					},
+					"frame": {
+						"x": 109,
+						"y": 1,
+						"w": 34,
+						"h": 24
+					}
+				},
+				{
+					"filename": "redbird-midflap.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 24
+					},
+					"frame": {
+						"x": 145,
+						"y": 1,
+						"w": 34,
+						"h": 24
+					}
+				},
+				{
+					"filename": "redbird-upflap.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 24
+					},
+					"frame": {
+						"x": 181,
+						"y": 1,
+						"w": 34,
+						"h": 24
+					}
+				},
+				{
+					"filename": "yellowbird-downflap.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 24
+					},
+					"frame": {
+						"x": 217,
+						"y": 1,
+						"w": 34,
+						"h": 24
+					}
+				},
+				{
+					"filename": "yellowbird-midflap.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 24
+					},
+					"frame": {
+						"x": 253,
+						"y": 1,
+						"w": 34,
+						"h": 24
+					}
+				},
+				{
+					"filename": "yellowbird-upflap.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 24
+					},
+					"frame": {
+						"x": 289,
+						"y": 1,
+						"w": 34,
+						"h": 24
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:b84a3d135c17c78fef59121a445c34fb:3d1ea93eec8d3affb7d4167f8af004d3:d9e3c86b60531cb5242960db692ccfd2$"
+	}
+}
