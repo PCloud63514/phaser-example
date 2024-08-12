@@ -62,6 +62,11 @@ export class Chapter5 extends Phaser.Scene {
         });
     }
 
+    update(time: number, delta: number) {
+        super.update(time, delta);
+        this.bird.rotation = Phaser.Math.Clamp(this.bird.body.velocity.y / 400, -0.5, 0.5);
+    }
+
     hitObject() {
         this.physics.pause();
         this.bird.setTint(0xff0000);
