@@ -65,6 +65,10 @@ export class Chapter5 extends Phaser.Scene {
     hitObject() {
         this.physics.pause();
         this.bird.setTint(0xff0000);
-        this.add.image(144, 256, 'gameover').setOrigin(0.5, 0.5);
+        const gameOver = this.add.image(144, 256, 'gameover').setOrigin(0.5, 0.5);
+        gameOver.setInteractive();
+        gameOver.on('pointerdown', () => {
+            this.scene.start("chapter6");
+        }, this);
     };
 }
