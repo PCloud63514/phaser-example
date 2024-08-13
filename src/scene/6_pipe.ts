@@ -103,7 +103,7 @@ export class Chapter6 extends Phaser.Scene {
         const gameOver = this.add.image(144, 256, 'gameover').setOrigin(0.5, 0.5);
         gameOver.setInteractive();
         gameOver.on('pointerdown', () => {
-            this.scene.start("chapter6");
+            this.scene.start("chapter7");
         }, this);
     };
 }
