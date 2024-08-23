@@ -18,7 +18,7 @@ export class Chapter5 extends Phaser.Scene {
         super("chapter5");
     }
 
-    preload() {
+    create() {
         this.uiHandle();
     }
 
@@ -53,9 +53,7 @@ export class Chapter5 extends Phaser.Scene {
         this.bird.outOfBoundsKill = false; // 객체가 밖으로 이동할 경우 제거할지 (기본 false)
 
         this.physics.add.collider(this.bird, this.platforms, this.hitObject, null, this);
-    }
 
-    create() {
         this.input.on('pointerdown', (pointer) => {
             this.bird.setTint(0xffffff);
             this.bird.setVelocityY(-200);

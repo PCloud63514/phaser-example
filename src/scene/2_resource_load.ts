@@ -2,7 +2,6 @@ export class Chapter2 extends Phaser.Scene {
     private percentText: Phaser.GameObjects.Text;
     private progressBar: Phaser.GameObjects.Graphics;
     private assetText: Phaser.GameObjects.Text;
-    private delay: number = 0;
 
     constructor() {
         super("chapter2");
@@ -14,9 +13,56 @@ export class Chapter2 extends Phaser.Scene {
         this.load.on("complete", () => {
             this.assetText.text = "Complete!";
             this.time.delayedCall(3500, () => {
-                this.scene.start("chapter3");
+                this.scene.start("game");
             });
         });
+    }
+
+    private loadAssets() {
+        this.load.image("0", "images/0.png");
+        this.load.image("1", "images/1.png");
+        this.load.image("2", "images/2.png");
+        this.load.image("3", "images/3.png");
+        this.load.image("4", "images/4.png");
+        this.load.image("5", "images/5.png");
+        this.load.image("6", "images/6.png");
+        this.load.image("7", "images/7.png");
+        this.load.image("8", "images/8.png");
+        this.load.image("9", "images/9.png");
+        this.load.image("bg-day", "images/background-day.png");
+        this.load.image("bg-night", "images/background-night.png");
+        this.load.image("base", "images/base.png");
+        this.load.image("gameover", "images/gameover.png");
+        this.load.image("message", "images/message.png");
+        this.load.image("pipe-green", "images/pipe-green.png");
+        this.load.image("pipe-red", "images/pipe-red.png");
+        this.time.delayedCall(500, () => {
+            this.load.image("bluebird-downflap", "images/bluebird-downflap.png");
+            this.load.image("bluebird-midflap", "images/bluebird-midflap.png");
+            this.load.image("bluebird-upflap", "images/bluebird-upflap.png");
+            this.load.start();
+        });
+        this.time.delayedCall(1000, () => {
+            this.load.image("redbird-downflap", "images/redbird-downflap.png");
+            this.load.image("redbird-midflap", "images/redbird-midflap.png");
+            this.load.image("redbird-upflap", "images/redbird-upflap.png");
+            this.load.start();
+        });
+        this.time.delayedCall(1500, () => {
+            this.load.image("yellowbird-downflap", "images/yellowbird-downflap.png");
+            this.load.image("yellowbird-midflap", "images/yellowbird-midflap.png");
+            this.load.image("yellowbird-upflap", "images/yellowbird-upflap.png");
+            this.load.start();
+        });
+        this.load.atlas('bird', "images/bird-sprite.png", "images/bird-sprite.json");
+        this.load.audio("die", "audio/die.wav");
+        this.load.audio("hit", "audio/hit.wav");
+        this.load.audio("point", "audio/point.wav");
+        this.load.audio("swoosh", "audio/swoosh.wav");
+        this.load.audio("wing", "audio/wing.wav");
+    }
+
+    create() {
     }
 
     private uiHandle() {
@@ -66,53 +112,6 @@ export class Chapter2 extends Phaser.Scene {
                     break;
             }
         });
-    }
-
-    private loadAssets() {
-        this.load.image("0", "images/0.png");
-        this.load.image("1", "images/1.png");
-        this.load.image("2", "images/2.png");
-        this.load.image("3", "images/3.png");
-        this.load.image("4", "images/4.png");
-        this.load.image("5", "images/5.png");
-        this.load.image("6", "images/6.png");
-        this.load.image("7", "images/7.png");
-        this.load.image("8", "images/8.png");
-        this.load.image("9", "images/9.png");
-        this.load.image("bg-day", "images/background-day.png");
-        this.load.image("bg-night", "images/background-night.png");
-        this.load.image("base", "images/base.png");
-        this.load.image("gameover", "images/gameover.png");
-        this.load.image("message", "images/message.png");
-        this.load.image("pipe-green", "images/pipe-green.png");
-        this.load.image("pipe-red", "images/pipe-red.png");
-        this.time.delayedCall(500, () => {
-            this.load.image("bluebird-downflap", "images/bluebird-downflap.png");
-            this.load.image("bluebird-midflap", "images/bluebird-midflap.png");
-            this.load.image("bluebird-upflap", "images/bluebird-upflap.png");
-            this.load.start();
-        });
-        this.time.delayedCall(1000, () => {
-            this.load.image("redbird-downflap", "images/redbird-downflap.png");
-            this.load.image("redbird-midflap", "images/redbird-midflap.png");
-            this.load.image("redbird-upflap", "images/redbird-upflap.png");
-            this.load.start();
-        });
-        this.time.delayedCall(1500, () => {
-            this.load.image("yellowbird-downflap", "images/yellowbird-downflap.png");
-            this.load.image("yellowbird-midflap", "images/yellowbird-midflap.png");
-            this.load.image("yellowbird-upflap", "images/yellowbird-upflap.png");
-            this.load.start();
-        });
-        this.load.atlas('bird', "images/bird-sprite.png", "images/bird-sprite.json");
-        this.load.audio("die", "audio/die.wav");
-        this.load.audio("hit", "audio/hit.wav");
-        this.load.audio("point", "audio/point.wav");
-        this.load.audio("swoosh", "audio/swoosh.wav");
-        this.load.audio("wing", "audio/wing.wav");
-    }
-
-    create() {
     }
 
     update(time: number, delta: number) {

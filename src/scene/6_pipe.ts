@@ -16,7 +16,7 @@ export class Chapter6 extends Phaser.Scene {
         super("chapter6");
     }
 
-    preload() {
+    create() {
         this.uiHandle();
     }
 
@@ -54,9 +54,7 @@ export class Chapter6 extends Phaser.Scene {
 
         this.physics.add.collider(this.bird, this.platforms, this.hitObject, null, this);
         this.physics.add.collider(this.bird, this.pipes, this.hitObject, null, this);
-    }
 
-    create() {
         this.input.on('pointerdown', (pointer) => {
             this.bird.setTint(0xffffff);
             this.bird.setVelocityY(-200);

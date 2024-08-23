@@ -14,7 +14,7 @@ export class Chapter4 extends Phaser.Scene {
         super("chapter4");
     }
 
-    preload() {
+    create() {
         this.uiHandle();
     }
 
@@ -42,9 +42,7 @@ export class Chapter4 extends Phaser.Scene {
         this.bird = this.add.sprite(width / 2, height / 2 + 50, "bird", 'yellowbird-2')
             .setOrigin(0.5, 0.5)
             .setInteractive();
-    }
 
-    create() {
         this.input.on('pointerdown', () => {
             this.bird.setTexture('bird', 'yellowbird-' + this.spriteIdx);
             if (this.spriteIdx == 3) this.spriteIdx = 0;

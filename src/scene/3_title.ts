@@ -12,7 +12,7 @@ export class Chapter3 extends Phaser.Scene {
         super("chapter3");
     }
 
-    preload() {
+    create() {
         this.uiHandle();
     }
 
@@ -36,9 +36,6 @@ export class Chapter3 extends Phaser.Scene {
             repeat: -1,                 // 무한 반복
             yoyo: true,                 // 깜빡거림을 위해 yoyo 효과를 사용 (알파 값을 다시 0에서 1로 변경)
         });
-    }
-
-    create() {
         this.input.on('pointerup', () => {
             this.tapMessage.setVisible(false);
             alert("Go Chapter4");
